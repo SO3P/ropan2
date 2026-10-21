@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLorraine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1c24"/>
+      <stop offset="50%" stop-color="#1f141a"/>
+      <stop offset="100%" stop-color="#120c10"/>
+    </linearGradient>
+    <linearGradient id="peachHair" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ffd1c2"/>
+      <stop offset="40%" stop-color="#fca088"/>
+      <stop offset="80%" stop-color="#ea7362"/>
+      <stop offset="100%" stop-color="#ba4e3f"/>
+    </linearGradient>
+    <radialGradient id="hazelEyes" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0a96d"/>
+      <stop offset="60%" stop-color="#99582a"/>
+      <stop offset="100%" stop-color="#432818"/>
+    </radialGradient>
+    <linearGradient id="pastelDress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffccd5"/>
+      <stop offset="50%" stop-color="#e29578"/>
+      <stop offset="100%" stop-color="#70363e"/>
+    </linearGradient>
+    <linearGradient id="goldFiligree" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fae092"/>
+      <stop offset="50%" stop-color="#c99a3e"/>
+      <stop offset="100%" stop-color="#8f641b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgLorraine)"/>
+
+  <!-- Floral Garland Aura -->
+  <g opacity="0.25" stroke="#fca088" stroke-width="1.5" fill="none">
+    <circle cx="300" cy="360" r="210" stroke-dasharray="6,6"/>
+    <circle cx="300" cy="360" r="180"/>
+  </g>
+
+  <!-- Peach High Twintails (Back curls flowing) -->
+  <!-- Left Twintail -->
+  <path d="M 210 240 C 130 200 90 320 110 460 C 130 540 170 560 160 620 C 145 640 120 520 140 420 C 150 340 190 260 210 240 Z" fill="url(#peachHair)"/>
+  <ellipse cx="195" cy="245" rx="18" ry="12" fill="#ff758f"/> <!-- Ribbon -->
+
+  <!-- Right Twintail -->
+  <path d="M 390 240 C 470 200 510 320 490 460 C 470 540 430 560 440 620 C 455 640 480 520 460 420 C 450 340 410 260 390 240 Z" fill="url(#peachHair)"/>
+  <ellipse cx="405" cy="245" rx="18" ry="12" fill="#ff758f"/>
+
+  <!-- Frilly Pastel Dress & Petite Shoulders -->
+  <path d="M 130 800 C 150 630 200 510 250 490 L 350 490 C 400 510 450 630 470 800 Z" fill="url(#pastelDress)"/>
+  <!-- Lace Frills on Neckline -->
+  <path d="M 230 490 Q 250 515 270 490 Q 290 515 310 490 Q 330 515 350 490 Q 370 515 390 490" stroke="#ffffff" stroke-width="3" fill="none"/>
+  
+  <!-- Slender Pale Neck & Ribbon Choker -->
+  <path d="M 275 420 L 325 420 L 320 490 L 280 490 Z" fill="#fff5eb"/>
+  <rect x="275" y="450" width="50" height="10" rx="3" fill="#ff758f"/>
+  <circle cx="300" cy="455" r="5" fill="#fae092"/>
+
+  <!-- Cute Oval Petite Face -->
+  <path d="M 245 320 C 245 425 275 448 300 448 C 325 448 355 425 355 320 C 355 240 245 240 245 320 Z" fill="#fff5eb"/>
+
+  <!-- Rosy Cheeks -->
+  <ellipse cx="260" cy="375" rx="12" ry="7" fill="#ff85a1" opacity="0.4"/>
+  <ellipse cx="340" cy="375" rx="12" ry="7" fill="#ff85a1" opacity="0.4"/>
+
+  <!-- Cute Strawberry Lips / Sweet smile -->
+  <path d="M 288 400 Q 300 409 312 400" fill="none" stroke="#d94f6e" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Button Nose -->
+  <path d="M 300 355 L 298 375 L 302 376" stroke="#e09c85" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Sparkling Light Brown Hazel Eyes (Doe eyes) -->
+  <!-- Left Eye -->
+  <ellipse cx="273" cy="342" rx="15" ry="12" fill="url(#hazelEyes)"/>
+  <circle cx="273" cy="342" r="6" fill="#2b1810"/>
+  <circle cx="277" cy="338" r="4" fill="#ffffff"/>
+  <circle cx="270" cy="346" r="2" fill="#ffffff"/>
+  <path d="M 255 330 Q 273 322 291 332" stroke="#522718" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right Eye -->
+  <ellipse cx="327" cy="342" rx="15" ry="12" fill="url(#hazelEyes)"/>
+  <circle cx="327" cy="342" r="6" fill="#2b1810"/>
+  <circle cx="323" cy="338" r="4" fill="#ffffff"/>
+  <circle cx="330" cy="346" r="2" fill="#ffffff"/>
+  <path d="M 309 332 Q 327 322 345 330" stroke="#522718" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Soft Peach Front Bangs & Side Locks -->
+  <path d="M 240 250 C 230 300 235 360 248 395 C 255 360 250 300 252 250 Z" fill="url(#peachHair)"/>
+  <path d="M 360 250 C 370 300 365 360 352 395 C 345 360 350 300 348 250 Z" fill="url(#peachHair)"/>
+  <!-- Rounded soft bangs across forehead -->
+  <path d="M 240 250 Q 270 300 280 310 Q 290 280 300 250 Q 310 280 320 310 Q 335 295 360 250 C 340 180 260 180 240 250 Z" fill="url(#peachHair)"/>
+
+  <!-- Floral Lace Hairband -->
+  <path d="M 235 235 Q 300 210 365 235" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.8"/>
+  <circle cx="300" cy="222" r="7" fill="#ffccd5"/>
+
+  <!-- Crest Emblem -->
+  <g transform="translate(300, 720)">
+    <circle cx="0" cy="0" r="26" fill="#1b1218" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <text x="0" y="8" font-size="20" text-anchor="middle" fill="#ffb3c6">🌸</text>
+  </g>
+
+  <!-- Ornate Rofan Frame -->
+  <rect x="20" y="20" width="560" height="760" fill="none" stroke="url(#goldFiligree)" stroke-width="4" rx="8"/>
+  <rect x="30" y="30" width="540" height="740" fill="none" stroke="url(#goldFiligree)" stroke-width="1.2" stroke-dasharray="8,4" opacity="0.6"/>
+  <path d="M 25 60 L 60 25 M 35 25 L 25 35 M 25 75 L 75 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 60 L 540 25 M 565 25 L 575 35 M 575 75 L 525 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 25 740 L 60 775 M 35 775 L 25 765 M 25 725 L 75 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 740 L 540 775 M 565 775 L 575 765 M 575 725 L 525 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+
+  <!-- Character Banner Tag -->
+  <rect x="160" y="745" width="280" height="32" rx="16" fill="#181014" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <text x="300" y="766" font-family="'Cinzel', serif" font-size="14" font-weight="700" fill="#fae092" text-anchor="middle" letter-spacing="2">LORRAINE EVERFIELD</text>
+</svg>

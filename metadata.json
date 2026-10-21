@@ -1,0 +1,6 @@
+{
+  "name": "에델가르트 연대기 - 발레리온 왕립 아카데미",
+  "description": "에델가르트 왕국과 발레리온 왕립 아카데미의 세계관 및 인물 도감",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

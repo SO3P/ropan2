@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHermann" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f1e24"/>
+      <stop offset="50%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0b0b0e"/>
+    </linearGradient>
+    <linearGradient id="hairHermann" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#2d2d38"/>
+      <stop offset="40%" stop-color="#17171d"/>
+      <stop offset="100%" stop-color="#0d0d12"/>
+    </linearGradient>
+    <linearGradient id="armorCoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#47444c"/>
+      <stop offset="60%" stop-color="#28262c"/>
+      <stop offset="100%" stop-color="#19181d"/>
+    </linearGradient>
+    <linearGradient id="steelGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfd3db"/>
+      <stop offset="50%" stop-color="#8a8e99"/>
+      <stop offset="100%" stop-color="#4d5059"/>
+    </linearGradient>
+    <linearGradient id="goldFiligree" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fae092"/>
+      <stop offset="50%" stop-color="#c99a3e"/>
+      <stop offset="100%" stop-color="#8f641b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgHermann)"/>
+
+  <!-- Ancient Cross Swords Motif in background -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="3">
+    <line x1="150" y1="150" x2="450" y2="650"/>
+    <line x1="450" y1="150" x2="150" y2="650"/>
+    <circle cx="300" cy="400" r="160" fill="none" stroke-width="1.5"/>
+  </g>
+
+  <!-- Massive Long Curly Black Hair down to waist (back) -->
+  <path d="M 170 300 C 110 420 100 620 150 780 C 190 700 210 500 230 400 Z" fill="url(#hairHermann)"/>
+  <path d="M 430 300 C 490 420 500 620 450 780 C 410 700 390 500 370 400 Z" fill="url(#hairHermann)"/>
+  <!-- Curly waves detail -->
+  <path d="M 120 500 Q 150 560 130 620 Q 170 680 150 750" stroke="#3b3b4a" stroke-width="4" fill="none"/>
+  <path d="M 480 500 Q 450 560 470 620 Q 430 680 450 750" stroke="#3b3b4a" stroke-width="4" fill="none"/>
+
+  <!-- Broad Giant Shoulders & Unbuttoned Combat Shirt -->
+  <path d="M 80 800 C 110 580 180 470 240 450 L 360 450 C 420 470 490 580 520 800 Z" fill="url(#armorCoat)"/>
+  
+  <!-- Open Collar & Muscular Neck with battle scar -->
+  <path d="M 260 400 L 340 400 L 335 480 L 265 480 Z" fill="#eedccb"/>
+  <!-- Rugged Scar across neck/collarbone -->
+  <path d="M 270 440 L 320 460" stroke="#b08472" stroke-width="3" stroke-linecap="round"/>
+  <!-- Open shirt cleavage -->
+  <polygon points="280,450 320,450 300,530" fill="#eedccb"/>
+
+  <!-- Rugged Face / Square Jaw -->
+  <path d="M 230 290 C 230 430 270 450 300 450 C 330 450 370 430 370 290 C 370 210 230 210 230 290 Z" fill="#edd9c7"/>
+
+  <!-- Tired / Weary Heavy Eyelids & Dark Rings -->
+  <!-- Left Eye -->
+  <ellipse cx="270" cy="335" rx="14" ry="7" fill="#2d2825"/>
+  <circle cx="270" cy="335" r="4" fill="#141210"/>
+  <path d="M 250 324 Q 270 320 290 327" stroke="#1f1e24" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 256 348 Q 272 353 286 348" stroke="#a68472" stroke-width="1.5" fill="none" opacity="0.6"/> <!-- Tired dark circle -->
+
+  <!-- Right Eye -->
+  <ellipse cx="330" cy="335" rx="14" ry="7" fill="#2d2825"/>
+  <circle cx="330" cy="335" r="4" fill="#141210"/>
+  <path d="M 310 327 Q 330 320 350 324" stroke="#1f1e24" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 314 348 Q 328 353 344 348" stroke="#a68472" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Rugged Straight Nose -->
+  <path d="M 300 320 L 296 368 L 305 370" stroke="#b58d78" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Slight stubble / Tired mouth -->
+  <line x1="285" y1="400" x2="315" y2="400" stroke="#754b3c" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Wild Long Curly Hair over forehead and ears -->
+  <path d="M 220 230 C 200 290 215 360 235 410 C 245 370 240 300 245 250 Z" fill="url(#hairHermann)"/>
+  <path d="M 380 230 C 400 290 385 360 365 410 C 355 370 360 300 355 250 Z" fill="url(#hairHermann)"/>
+  <path d="M 225 220 Q 260 270 275 300 Q 285 250 300 220 Q 325 265 340 295 Q 350 250 375 220 C 350 160 250 160 225 220 Z" fill="url(#hairHermann)"/>
+
+  <!-- Battle-worn Greatsword Sheath visible over shoulder -->
+  <rect x="380" y="440" width="28" height="280" transform="rotate(-20 380 440)" fill="url(#steelGlow)" stroke="#1a1a20" stroke-width="2"/>
+  <circle cx="395" cy="430" r="14" fill="url(#goldFiligree)"/>
+
+  <!-- Medicinal Herb motif in corner -->
+  <g transform="translate(300, 720)">
+    <circle cx="0" cy="0" r="26" fill="#1b1c1e" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <text x="0" y="8" font-size="20" text-anchor="middle" fill="#9de6a3">🌿</text>
+  </g>
+
+  <!-- Ornate Rofan Frame -->
+  <rect x="20" y="20" width="560" height="760" fill="none" stroke="url(#goldFiligree)" stroke-width="4" rx="8"/>
+  <rect x="30" y="30" width="540" height="740" fill="none" stroke="url(#goldFiligree)" stroke-width="1.2" stroke-dasharray="8,4" opacity="0.6"/>
+  <path d="M 25 60 L 60 25 M 35 25 L 25 35 M 25 75 L 75 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 60 L 540 25 M 565 25 L 575 35 M 575 75 L 525 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 25 740 L 60 775 M 35 775 L 25 765 M 25 725 L 75 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 740 L 540 775 M 565 775 L 575 765 M 575 725 L 525 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+
+  <!-- Character Banner Tag -->
+  <rect x="160" y="745" width="280" height="32" rx="16" fill="#121216" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <text x="300" y="766" font-family="'Cinzel', serif" font-size="14" font-weight="700" fill="#fae092" text-anchor="middle" letter-spacing="2">HERMANN MILES • 42</text>
+</svg>

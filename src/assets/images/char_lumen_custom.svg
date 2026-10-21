@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1625"/>
+      <stop offset="50%" stop-color="#161224"/>
+      <stop offset="100%" stop-color="#0c0a14"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#e63946"/>
+      <stop offset="40%" stop-color="#b5173d"/>
+      <stop offset="100%" stop-color="#640d24"/>
+    </linearGradient>
+    <linearGradient id="robeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e2238"/>
+      <stop offset="100%" stop-color="#0e111d"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d49aff"/>
+      <stop offset="70%" stop-color="#8a3ffc"/>
+      <stop offset="100%" stop-color="#3b1261"/>
+    </radialGradient>
+    <linearGradient id="goldFiligree" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fae092"/>
+      <stop offset="50%" stop-color="#c99a3e"/>
+      <stop offset="100%" stop-color="#8f641b"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Magic Sigil Ring -->
+  <circle cx="300" cy="380" r="220" fill="none" stroke="#9357ff" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.3"/>
+  <circle cx="300" cy="380" r="190" fill="none" stroke="#caa6ff" stroke-width="1" opacity="0.25"/>
+
+  <!-- Character Silhouette & Body -->
+  <!-- Long Red Hair flowing down back -->
+  <path d="M 230 260 C 180 340 160 520 220 700 C 240 680 250 500 240 400 Z" fill="url(#hairGrad)" opacity="0.85"/>
+  <path d="M 370 260 C 430 360 440 540 370 700 C 350 670 340 500 350 400 Z" fill="url(#hairGrad)" opacity="0.85"/>
+
+  <!-- Robe & Shoulders -->
+  <path d="M 120 800 C 140 600 200 480 250 460 L 350 460 C 400 480 460 600 480 800 Z" fill="url(#robeGrad)"/>
+  <!-- Gold Embroidered Robe Trims -->
+  <path d="M 250 460 L 290 800 L 310 800 L 350 460 L 320 460 L 300 700 L 280 460 Z" fill="url(#goldFiligree)"/>
+  <path d="M 210 510 C 260 550 340 550 390 510" fill="none" stroke="url(#goldFiligree)" stroke-width="3"/>
+  
+  <!-- Neck and collar -->
+  <path d="M 270 410 L 330 410 L 325 470 L 275 470 Z" fill="#faebd7"/>
+  <!-- Lavender choker/cravat -->
+  <path d="M 280 440 L 320 440 L 305 480 L 295 480 Z" fill="#9d78cc"/>
+
+  <!-- Face -->
+  <path d="M 240 310 C 240 420 280 450 300 450 C 320 450 360 420 360 310 C 360 230 240 230 240 310 Z" fill="#fcf3ea"/>
+
+  <!-- Gentle lips / enigmatic smile -->
+  <path d="M 285 395 Q 300 402 315 395" fill="none" stroke="#b05252" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M 300 355 L 297 375 L 303 376" fill="none" stroke="#d49b82" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Violet Eyes with calm intellect -->
+  <!-- Left Eye -->
+  <ellipse cx="272" cy="335" rx="14" ry="9" fill="url(#eyeGlow)"/>
+  <circle cx="270" cy="334" r="5" fill="#220038"/>
+  <circle cx="274" cy="332" r="2.5" fill="#ffffff"/>
+  <path d="M 255 325 Q 272 320 290 327" fill="none" stroke="#4a1525" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Right Eye -->
+  <ellipse cx="328" cy="335" rx="14" ry="9" fill="url(#eyeGlow)"/>
+  <circle cx="330" cy="334" r="5" fill="#220038"/>
+  <circle cx="326" cy="332" r="2.5" fill="#ffffff"/>
+  <path d="M 310 327 Q 328 320 345 325" fill="none" stroke="#4a1525" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Refined tied red hair - front bangs & ponytail -->
+  <!-- Left bang -->
+  <path d="M 235 240 C 220 290 230 350 245 390 C 255 350 250 280 250 240 Z" fill="url(#hairGrad)"/>
+  <!-- Right bang -->
+  <path d="M 365 240 C 380 290 370 350 355 390 C 345 350 350 280 350 240 Z" fill="url(#hairGrad)"/>
+  <!-- Forehead bangs parted stylishly -->
+  <path d="M 240 230 Q 280 280 270 310 Q 285 270 295 240 Q 320 280 335 305 Q 330 260 360 230 C 340 180 260 180 240 230 Z" fill="url(#hairGrad)"/>
+  <!-- Ponytail ribbon tie on top/back -->
+  <ellipse cx="300" cy="185" rx="40" ry="15" fill="#692233"/>
+  <path d="M 290 180 C 260 120 220 80 180 140 C 210 160 250 180 285 190 Z" fill="url(#hairGrad)"/>
+
+  <!-- Lavender Blossom Emblem near bottom -->
+  <g transform="translate(300, 720)">
+    <circle cx="0" cy="0" r="26" fill="#1b1427" stroke="url(#goldFiligree)" stroke-width="2"/>
+    <text x="0" y="8" font-size="20" text-anchor="middle" fill="#caa6ff">🔮</text>
+  </g>
+
+  <!-- Ornate Rofan Frame -->
+  <rect x="20" y="20" width="560" height="760" fill="none" stroke="url(#goldFiligree)" stroke-width="4" rx="8"/>
+  <rect x="30" y="30" width="540" height="740" fill="none" stroke="url(#goldFiligree)" stroke-width="1.2" stroke-dasharray="8,4" opacity="0.6"/>
+  <!-- Corner filigree accents -->
+  <path d="M 25 60 L 60 25 M 35 25 L 25 35 M 25 75 L 75 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 60 L 540 25 M 565 25 L 575 35 M 575 75 L 525 25" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 25 740 L 60 775 M 35 775 L 25 765 M 25 725 L 75 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <path d="M 575 740 L 540 775 M 565 775 L 575 765 M 575 725 L 525 775" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+
+  <!-- Character Banner Tag -->
+  <rect x="180" y="745" width="240" height="32" rx="16" fill="#140f1f" stroke="url(#goldFiligree)" stroke-width="1.5"/>
+  <text x="300" y="766" font-family="'Cinzel', serif" font-size="14" font-weight="700" fill="#fae092" text-anchor="middle" letter-spacing="2">LUMEN • 31</text>
+</svg>

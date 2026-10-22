@@ -72,7 +72,7 @@ export const DestinyView: React.FC = () => {
           >
 
 <img
-  src="https://example.com/crystal-ball.jpg"
+  src="https://lh3.googleusercontent.com/d/10vmZov9v9xIkSqVLGlo6prXdhaIFgEzb"
   alt="수정구슬 이미지"
   referrerPolicy="no-referrer"
   className="w-full aspect-square object-cover pointer-events-none"

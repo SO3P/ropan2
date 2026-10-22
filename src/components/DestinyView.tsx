@@ -70,9 +70,10 @@ export const DestinyView: React.FC = () => {
               isRevealing ? 'scale-95 animate-pulse' : 'hover:scale-[1.01]'
             }`}
           >
+
 <img
-  src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23"  {/* 👈 여기에 외부 이미지 주소를 넣으세요 */}
-  alt="수정구슬"
+  src="https://example.com/crystal-ball.jpg"
+  alt="수정구슬 이미지"
   referrerPolicy="no-referrer"
   className="w-full aspect-square object-cover pointer-events-none"
 />

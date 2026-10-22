@@ -72,7 +72,7 @@ export const DestinyView: React.FC = () => {
           >
 
 <img
-  src="https://lh3.googleusercontent.com/d/1D4bCMK_hmwM7LAAwRf2owiAXBPZximpL"
+  src="https://lh3.googleusercontent.com/d/1OHv7XUKUgi2X4GzMXegBWDTAPnIUryov"
   alt="수정구슬 이미지"
   className="block w-full aspect-square object-contain"
   onError={(e) => {

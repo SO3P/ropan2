@@ -6,7 +6,7 @@ import { Sparkles, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
 export const DestinyView: React.FC = () => {
   const [selectedFate, setSelectedFate] = useState<FateItem | null>(null);
   const [isRevealing, setIsRevealing] = useState<boolean>(false);
-  const [filterMode, setFilterMode] = useState<'전체' | '여장남자 예시' | '남장여자 예시'>('전체');
+  const [filterMode, setFilterMode] = useState<'전체' | '남장여자 예시' | '여장남자 예시'>('전체');
   const [showAllList, setShowAllList] = useState<boolean>(false);
 
   const handleDrawFate = () => {
@@ -24,8 +24,8 @@ export const DestinyView: React.FC = () => {
     }, 400);
   };
 
-  const femaleDisguiseFates = FATE_ITEMS.filter((f) => f.category === '여장남자 예시');
-  const maleDisguiseFates = FATE_ITEMS.filter((f) => f.category === '남장여자 예시');
+  const femaleDisguiseFates = FATE_ITEMS.filter((f) => f.category === '남장여자 예시');
+  const maleDisguiseFates = FATE_ITEMS.filter((f) => f.category === '여장남자 예시');
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-12 text-[#ede7de]">
@@ -45,7 +45,7 @@ export const DestinyView: React.FC = () => {
 
         {/* Category Random Filter Pills */}
         <div className="flex flex-wrap justify-center gap-2 pt-1">
-          {(['전체', '여장남자 예시', '남장여자 예시'] as const).map((mode) => (
+          {(['전체', '남장여자 예시', '여장남자 예시'] as const).map((mode) => (
             <button
               key={mode}
               onClick={() => setFilterMode(mode)}
@@ -125,10 +125,10 @@ export const DestinyView: React.FC = () => {
 
         {showAllList && (
           <div className="mt-8 space-y-8 pt-4 border-t border-[#3c344a] text-lg text-[#ddd4c8]">
-            {/* 여장남자 예시 */}
+            {/* 남장여자 예시 */}
             <div>
               <h4 className="text-xl font-bold text-[#dfbe7e] mb-4">
-                # 여장남자 예시
+                # 남장여자 예시
               </h4>
               <ul className="space-y-3">
                 {femaleDisguiseFates.map((item, idx) => (
@@ -140,10 +140,10 @@ export const DestinyView: React.FC = () => {
               </ul>
             </div>
 
-            {/* 남장여자 예시 */}
+            {/* 여장남자 예시 */}
             <div>
               <h4 className="text-xl font-bold text-[#dfbe7e] mb-4">
-                ## 남장여자 예시
+                ## 여장남자 예시
               </h4>
               <ul className="space-y-3">
                 {maleDisguiseFates.map((item, idx) => (

@@ -72,10 +72,15 @@ export const DestinyView: React.FC = () => {
           >
 
 <img
-  src="https://lh3.googleusercontent.com/d/10vmZov9v9xIkSqVLGlo6prXdhaIFgEzb"
+  src="https://lh3.googleusercontent.com/d/10vmZov9v9xIkSqVLGlo6prXdhalFGezb"
   alt="수정구슬 이미지"
-  referrerPolicy="no-referrer"
-  className="w-full aspect-square object-cover pointer-events-none"
+  className="block w-full aspect-square object-contain"
+  onError={(e) => {
+    console.error("이미지 로드 실패:", e.currentTarget.src);
+  }}
+  onLoad={() => {
+    console.log("수정구슬 이미지 로드 성공");
+  }}
 />
 
             {/* Glowing Callout Overlay */}
